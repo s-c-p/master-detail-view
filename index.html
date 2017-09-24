@@ -47,9 +47,17 @@ let json2table = function(jsonArr) {
 		u("table > tbody:last-child").append(code);
 	}
 };
+
 json2table(DATA)
+</script>
+<script type="text/javascript">
+let show_details = function(id_of_entry) {
+	
+}
+
 u("tr")
 	.on("mouseover", function(e) {  u(e.currentTarget).attr("style", "background-color: pink;")  })
 	.on("mouseout", function(e) {  u(e.currentTarget).attr("style", 'background-color: "";')  })
+	.on("click", function(e) {  show_details(   u(e.currentTarget).attr("id")   )  })
 </script>
 </html>
